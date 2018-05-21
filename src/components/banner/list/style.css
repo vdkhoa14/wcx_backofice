@@ -1,0 +1,86 @@
+#banner_manager .box.box-primary .box-body .banner_item .item_detail{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail img{
+    transition: all 0.1s linear;
+}
+
+#banner_manager .box.box-primary .box-body .banner_item .item_detail:hover img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    -webkit-filter: blur(10px);
+    filter: blur(10px)
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_header,
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_detail,
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_footer{
+    display: none;
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail:hover .info .info_header{
+    display: inherit;
+    animation: topDown 0.5s;
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail:hover .info .info_detail,
+#banner_manager .box.box-primary .box-body .banner_item .item_detail:hover .info .info_footer{
+    display: inherit;
+    animation: leftRight 0.5s;
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_header span,
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_header i,
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_detail span,
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_footer span{
+    color: #fff;
+    font-size: 130%;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_header span{
+    font-size: 190%;
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_header i{
+    cursor: pointer;
+    float: right;
+    font-size: 150%;
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_footer{
+    position: absolute;
+    bottom: 20px;
+}
+#banner_manager .box.box-primary .box-body .banner_item .item_detail .info .info_footer span > a{
+    color: rgb(0, 217, 255);
+}
+
+@-webkit-keyframes topDown {
+    from {margin-top: -15px;} 
+    to {margin-top: 0px;}
+}
+@keyframes topDown {
+    from {margin-top: -15px;} 
+    to {margin-top: 0px;}
+}
+
+@-webkit-keyframes leftRight {
+    from {margin-left: -15px;} 
+    to {margin-left: 0px;}
+}
+@keyframes leftRight {
+    from {margin-left: -15px;} 
+    to {margin-left: 0px;}
+}

@@ -1,0 +1,61 @@
+.create-popup {
+    position: fixed;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.create-popup  .contain {
+    width: 500px;
+    box-sizing: border-box;
+    margin: 100px auto;
+}
+.create-popup  .contain .header {
+    background: #3C8DBC;
+    color: #fff;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px 5px 0px 0px;
+}
+.create-popup  .contain .header i.fa.fa-times {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+.create-popup  .contain .detail {
+    background: #fff;
+    padding: 30px 30px 5px 30px;
+}
+.create-popup  .contain .footer {
+    text-align: right;
+    background: #fff;
+    padding: 0px 30px 30px 30px;
+    border-radius: 0px 0px 5px 5px;
+}
+.create-popup  .contain .footer button{
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    color: #fff;
+}
+.create-popup  .contain .footer button.bt_add{
+    background: #3C8DBC;
+}
+.create-popup  .contain .footer button.bt_cancel {
+    margin-left: 20px;
+    background: #aaa;
+}
+.bt_create{
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    color: #fff;
+    background: #3C8DBC;
+}
+.create-popup  .contain textarea.description {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+}
